@@ -2,39 +2,230 @@
 <html>
 
 <head>
-  <title>My Site</title>
+  <title>Đặng Vĩnh Quang | Portfolio</title>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <style>
-    body,
-    h1 {
-      font-family: "Raleway", sans-serif
-    }
 
-    body,
-    html {
-      height: 100%
-    }
+  <!-- Basic Metadata -->
+  <meta name="title" content="Đặng Vĩnh Quang | Portfolio">
+  <meta
+    name="description"
+    content="Hi, my name is Đặng Vĩnh Quang. I'm a Software Engineering student interested in web development and programming."
+  >
+  <meta
+    name="keywords"
+    content="Dang Vinh Quang, portfolio, software engineering, web development"
+  >
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="author" content="Đặng Vĩnh Quang">
 
-    .bgimg {
-      background-image: url('https://images.unsplash.com/photo-1515256722043-0f2b082ddadc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80');
-      min-height: 100%;
-      background-position: center;
-      background-size: cover;
-    }
-  </style>
+  <!-- Open Graph Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Đặng Vĩnh Quang | Portfolio">
+  <meta
+    property="og:description"
+    content="My personal portfolio website. Software Engineering student."
+  >
+  <meta property="og:image" content="/banner.avif">
+
+  <!-- Twitter Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Đặng Vĩnh Quang | Portfolio">
+  <meta
+    name="twitter:description"
+    content="My personal portfolio website. Software Engineering student."
+  >
+  <meta name="twitter:image" content="/banner.avif">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="/src/css/style.css">
 </head>
 
 <body>
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
-      Logo
+  <!-- Banner -->
+  <section
+    class="min-h-screen w-full flex flex-col justify-center items-center
+    bg-[url('/banner.avif')] bg-cover bg-center"
+  >
+    <div class="w-full lg:w-[80%] p-12 text-gray-800">
+      <h1 class="text-4xl lg:text-6xl font-bold mb-10 grid grid-cols-1 lg:gap-5">
+        <span>
+          Hi, my name is
+          <span class="text-teal-400">Đặng Vĩnh Quang</span>
+        </span>
+
+        <span>I'm a Software Engineering Student.</span>
+      </h1>
+
+      <a
+        href="#about-me"
+        class="uppercase border-2 border-teal-400 p-3
+        hover:bg-teal-400 hover:text-white transition-colors cursor-pointer"
+      >
+        <span class="text-xl px-8 py-3 font-light">
+          Know more
+        </span>
+      </a>
     </div>
-    <div class="w3-display-middle">
-      <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+  </section>
+  <!-- Banner ./ -->
+
+  <!-- About Me -->
+  <section
+    id="about-me"
+    class="bg-teal-400 min-h-screen w-full flex flex-col
+    justify-center items-center p-4 lg:p-12 text-white"
+  >
+    <div class="w-full lg:w-[60%] mb-5">
+
+      <h2 class="uppercase text-3xl lg:text-5xl text-center
+      font-bold text-white mb-12">
+        About Me
+      </h2>
+
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-3">
+
+        <!-- Avatar -->
+        <div class="flex justify-center items-center">
+          <img
+            class="object-cover max-w-xs w-48 rounded-lg"
+            src="/imgs/avatar.png"
+            alt="My avatar"
+          />
+        </div>
+
+        <!-- Introduction -->
+        <div class="lg:col-span-2 flex justify-center items-center">
+          <div class="p-4 text-center lg:p-8 lg:text-start">
+
+            <p class="text-lg font-light mb-5">
+              I am a Software Engineering student who enjoys
+              programming, web development, and learning new technologies.
+
+              My goal is to become a professional software developer
+              and build useful applications.
+            </p>
+
+            <a
+              href="#contact"
+              class="uppercase border-2 border-white p-3
+              hover:bg-white hover:text-teal-400 transition-colors"
+            >
+              <span class="text-xl px-8 py-3">
+                Contact Me
+              </span>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
+  </section>
+  <!-- About Me ./ -->
+
+  <!-- Contact -->
+  <section
+    id="contact"
+    class="bg-white min-h-[500px] w-full flex flex-col
+    justify-center items-center p-6 lg:p-12 text-gray-800"
+  >
+    <div class="w-full lg:w-[60%] mb-5">
+
+      <h2 class="uppercase text-3xl lg:text-5xl
+      text-center font-bold mb-6">
+        Contact
+      </h2>
+
+      <p class="flex flex-col justify-center items-center
+      pt-5 pb-5 text-center">
+
+        <span class="text-2xl text-teal-500 mb-3">
+          I LOOK FORWARD TO WORKING WITH YOU
+        </span>
+
+        <span>
+          Feel free to contact me for collaboration or opportunities.
+        </span>
+
+      </p>
+    </div>
+
+    <a
+      href="mailto:quang.dang230905@example.com"
+      class="border-2 border-teal-400 px-8 py-3
+      bg-teal-400 text-white hover:bg-white
+      hover:text-teal-400 transition-colors"
+    >
+      <span class="text-xl uppercase font-light">
+        Send An Email Now
+      </span>
+    </a>
+  </section>
+  <!-- Contact ./ -->
+
+  <!-- Footer -->
+  <footer
+    class="bg-neutral-900 min-h-[300px] pt-12 pb-12
+    flex flex-row justify-center items-center"
+  >
+    <div class="w-[60%] flex flex-col justify-center items-center">
+
+      <ul class="flex flex-row">
+
+        <li class="px-4 cursor-pointer hover:-translate-y-2 transition">
+          <a href="https://twitter.com/" target="_blank">
+            <img
+              class="w-10 grayscale hover:grayscale-0"
+              src="/imgs/twitter.svg"
+              alt="Twitter"
+            />
+          </a>
+        </li>
+
+        <li class="px-4 cursor-pointer hover:-translate-y-2 transition">
+          <a href="https://linkedin.com/" target="_blank">
+            <img
+              class="w-10 grayscale hover:grayscale-0"
+              src="/imgs/linkedin.svg"
+              alt="LinkedIn"
+            />
+          </a>
+        </li>
+
+        <li class="px-4 cursor-pointer hover:-translate-y-2 transition">
+          <a href="https://github.com/" target="_blank">
+            <img
+              class="w-10 grayscale hover:grayscale-0"
+              src="/imgs/github.svg"
+              alt="GitHub"
+            />
+          </a>
+        </li>
+
+      </ul>
+
+      <hr class="w-1/2 border-gray-500 mt-10" />
+
+      <p class="text-lg text-gray-500 mt-5">
+        © 2026 - Dang Vinh Quang
+      </p>
+
+    </div>
+  </footer>
+  <!-- Footer ./ -->
+
+  <script type="module" src="/src/scripts/application.js"></script>
 </body>
 </html>
